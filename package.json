@@ -1,0 +1,26 @@
+{
+  "name": "click-monitoring",
+  "version": "1.0.0",
+  "description": "App to track clicks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Nikolai Samokhin",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "mongoose": "^5.11.8",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
