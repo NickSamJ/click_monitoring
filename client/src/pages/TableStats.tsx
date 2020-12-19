@@ -119,8 +119,7 @@ const TableStats = () => {
                     <Link to={click.domain}>{click.domain}</Link>
                   </TableCell>
                   <TableCell align="right">
-                    some
-                    {click.date.toLocaleString()}
+                    {new Date(click.date).toLocaleString()}
                   </TableCell>
                 </TableRow>
               ))}
