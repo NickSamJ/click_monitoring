@@ -11,7 +11,5 @@
       },
       body: JSON.stringify({ domain }),
     });
-    const data = await res.json();
-    console.log(data);
   });
 })();
